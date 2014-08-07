@@ -1,4 +1,7 @@
-d9df02f76c30756288c5b0faced5f3dc *DESCRIPTION
-57c59b4eb6def56a4714c27bc2077fc5 *NAMESPACE
-49baf13396d96ced16972a12cf6e1db8 *R/generate.R
-716bed459990ab48ac20aab41c53d7fa *man/generate.Rd
+35378b799843641202d6374175ee3a82 *DESCRIPTION
+261f70e777610a0e2b2014c5ba657905 *NAMESPACE
+5f9feae92c7abdd7e6bdf2c90d5ba831 *R/generate.R
+4f153ba7eb036d795ece6f02738d4f90 *inst/stuff/ComprehensivePrecipitationGenerator.R
+410ee778f6dc0d77177cae0bbdb62991 *inst/stuff/ComprehensiveTemperatureGenerator.R
+8651701fac8769ed0860909064db9a50 *inst/temperature.generation.R
+545d57397242fc97abf94a5507f1674b *man/generate.Rd

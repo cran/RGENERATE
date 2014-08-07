@@ -2,26 +2,28 @@
 \alias{generate}
 \alias{generate.GPCAvarest2}
 \alias{generate.default}
+\alias{generate.matrix}
 \alias{generate.varest}
 \alias{generate.varest2}
 \title{generate}
 \usage{
-  generate(x = NULL, ...)
+generate(x = NULL, ...)
 
-  \method{generate}{default} (x, FUN = rnorm, n = 100,
-    K = 3, names = NULL, cov = NULL, ...)
+\method{generate}{default}(x, FUN = rnorm, n = 100, K = 3, names = NULL,
+  cov = NULL, ...)
 
-  \method{generate}{varest} (x, FUN = rnorm, n = 100,
-    names = NULL, noise = NULL, exogen = NULL,
-    xprev = NULL, ...)
+\method{generate}{varest}(x, FUN = rnorm, n = 100, names = NULL,
+  noise = NULL, exogen = NULL, xprev = NULL, ...)
 
-  \method{generate}{varest2} (x, FUN = rnorm, n = 100,
-    names = NULL, noise = NULL, exogen = NULL,
-    xprev = NULL, ...)
+\method{generate}{varest2}(x, FUN = rnorm, n = 100, names = NULL,
+  noise = NULL, exogen = NULL, xprev = NULL, ...)
 
-  \method{generate}{GPCAvarest2} (x, FUN = rnorm, n = 100,
-    names = NULL, noise = NULL, exogen = NULL,
-    xprev = NULL, extremes = TRUE, type = 3, ...)
+\method{generate}{GPCAvarest2}(x, FUN = rnorm, n = 100, names = NULL,
+  noise = NULL, exogen = NULL, xprev = NULL, extremes = TRUE,
+  type = 3, ...)
+
+\method{generate}{matrix}(x, FUN = rnorm, n = 100, noise = NULL,
+  xprev = NULL, names = NULL, ...)
 }
 \arguments{
   \item{x}{null object or the model used for random
@@ -69,13 +71,13 @@
   \item{extremes,type}{see \code{\link{inv_GPCA}}}
 }
 \value{
-  a matrix or a data frame object
+a matrix or a data frame object
 }
 \description{
-  generate
+generate
 
-  It generates a multivarite random series according to the
-  model \code{x}
+It generates a multivarite random series according to the
+model \code{x}
 }
 \examples{
 library(RGENERATE)
@@ -99,8 +101,13 @@ exogen <- as.data.frame(x+5)
 gpcavar <- getVARmodel(data=df,suffix=NULL,p=3,n_GPCA_iteration=5,
 n_GPCA_iteration_residuals=5,exogen=exogen)
 gpcagg <- generate(gpcavar,n=20,exogen=exogen)
+
+## Generate an auto-regrassive time-series with a generic matrix
+
+A <- diag(c(1,-1,1))
+mgg <- generate(A,n=10)
 }
 \seealso{
-  \code{\link{getVARmodel}}
+\code{\link{getVARmodel}}
 }
 

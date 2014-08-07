@@ -122,6 +122,12 @@ NULL
 #' n_GPCA_iteration_residuals=5,exogen=exogen)
 #' gpcagg <- generate(gpcavar,n=20,exogen=exogen) 
 #' 
+#' ## Generate an auto-regrassive time-series with a generic matrix 
+#' 
+#' A <- diag(c(1,-1,1))
+#' mgg <- generate(A,n=10)
+#' 
+#' 
 
 generate.varest <- function (x,FUN=rnorm,n=100,names=NULL,noise=NULL,exogen=NULL,xprev=NULL,...)  {
 
@@ -144,7 +150,7 @@ generate.varest <- function (x,FUN=rnorm,n=100,names=NULL,noise=NULL,exogen=NULL
 	nexogen <- ncol(x$datamat)-K*(p+1)
 	## CHECK exogen var!!! 
 	if ((is.null(exogen)) & (nexogen!=0)) {
-		print("Error in geberate.varest method: exogen variables (predictors) are needed for VAR multirealization") 
+		print("Error in generate.varest method: exogen variables (predictors) are needed for VAR multirealization") 
 		print("Check VAR and exogen variables!!!")
 		stop()
 	} else if (!is.null(exogen)) if (nexogen!=ncol(exogen)) {
@@ -278,13 +284,59 @@ generate.GPCAvarest2 <- function (x,FUN=rnorm,n=100,names=NULL,noise=NULL,exogen
 	
 }	
 
+NULL
+#' 
+#' 
 
+#' @rdname generate
+#' @method generate matrix
+#' @S3method generate matrix
+#' @aliases generate 
+#' @export
 
 
 #####################################################################
 #####################################################################
 #####################################################################
 
+generate.matrix <- function (x,FUN=rnorm,n=100,noise=NULL,xprev=NULL,names=NULL,...) { 
+	
+	# vedere codice RMAWGEN 
+	
+	
+	
+	
+	if (!is.null(noise))  n <- nrow(noise)
+	
+	if (is.null(noise)) {
+		K <- nrow(x)
+		noise <- generate(FUN=FUN,n=n,K=K,...)
+		
+		
+	}
+	
+	if (is.null(xprev)) {
+		print("b")
+		xprev <- t(noise[1,])
+	}
+	out <- noise 
+	
+	for (i in 1:nrow(noise)) { 
+	       
+			xnext <- as.vector(x %*% as.matrix(xprev)) + as.vector(noise[i,])	
+			out[i,] <- xnext
+			xprev <- t(out[i,])
+			
+	
+	
+	}
+	
+	if (!is.null(names)) names(out) <- names
+	
+	return(out)
+	
+	
+}	
 
 
 
