@@ -1,8 +1,9 @@
-a16cd157fc4a56db892b3cb931d10b2a *DESCRIPTION
-b55f4ffc44ef57d85859c2c32485c175 *NAMESPACE
-08107c09c84208d8c091595f3f568c9b *R/gapFilling.R
-5ac1a57c6de6ef1bec75da878872d9fd *R/generate.R
+ee6caf104e1c438f7f77fafecf1e5c4b *DESCRIPTION
+03416e58453096ba0914e7691c085e5d *NAMESPACE
+43378fe69093362538be309d52120c5a *R/gapFilling.R
+c4935f25e57e76cce41147eda433b072 *R/generate.R
 5b1d160ae0efd18a3f3c52a3d61c93b2 *README.md
+bcf2c775b14007277d6da0c4af6343f8 *inst/CITATION
 8651701fac8769ed0860909064db9a50 *inst/temperature.generation.R
-aa2d8e514ac9e042c423fc6d510d739e *man/gapFilling.Rd
-92178762fd5a9c67857e0d1cc3c6643f *man/generate.Rd
+901c26706babb77173d6a1213c65aeb2 *man/gapFilling.Rd
+4acc20eceab8ff102daafc108cd23205 *man/generate.Rd

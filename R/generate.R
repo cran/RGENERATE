@@ -27,7 +27,7 @@ NULL
 #' 
 #' @rdname generate
 #' @method generate default
-#' @S3method generate default
+#### @S3method generate default
 #' @aliases generate 
 #' @export
 
@@ -76,7 +76,7 @@ NULL
 #' 
 #' 
 #' @param x null object or the model used for random generation , e.g. a VAR model as a \code{\link{varest-class}} or \code{\link{varest2-class}} object. Default is \code{NULL}.
-#' @param FUN random function of the probability distribution used for noise random generation. Default is \code{\link{rnorm}}. See \url{http://cran.r-project.org/web/views/Distributions.html} 
+#' @param FUN random function of the probability distribution used for noise random generation. Default is \code{\link{rnorm}}. See \url{	https://CRAN.R-project.org/view=Distributions} 
 #' @param n number of generations requested 
 #' @param names null object or string vectors or names of the variables to be generated simultaneously. Default is \code{NULL}.
 #' @param K number of the variables to be generated simultaneously, i.e. the K parameters of a VAR. It is automatically detected by \code{x}, \code{names} or \code{cov}, if one of these is not \code{NULL}. 
@@ -99,12 +99,14 @@ NULL
 #' @name generate
 #' @rdname generate
 #' @method generate varest
-#' @S3method generate varest
+#### @S3method generate varest
 #' @aliases generate generate.varest 
 #' 
 #' @export
 #' 
 #' @import RMAWGEN 
+#' @importFrom stats coef residuals rnorm
+#' 
 #' @examples 
 #' 
 #' 
@@ -352,7 +354,7 @@ NULL
 #' 
 #' @rdname generate
 #' @method generate varest2
-#' @S3method generate varest2
+#### @S3method generate varest2
 #' @aliases generate 
 #' @export
 
@@ -374,7 +376,7 @@ NULL
 #' 
 #' @rdname generate
 #' @method generate GPCAvarest2
-#' @S3method generate GPCAvarest2
+#### @S3method generate GPCAvarest2
 #' @aliases generate 
 #' @export
 
@@ -438,7 +440,7 @@ NULL
 
 #' @rdname generate
 #' @method generate matrix
-#' @S3method generate matrix
+#### @S3method generate matrix
 #' @aliases generate 
 #' @export
 
@@ -545,7 +547,7 @@ NULL
 #' 
 #' @rdname generate
 #' @method generate list
-#' @S3method generate list
+#### @S3method generate list
 #' @aliases generate 
 #' @export
 
@@ -589,7 +591,7 @@ NULL
 #' 
 #' @rdname generate
 #' @method generate MonthlyList
-#' @S3method generate MonthlyList
+#### @S3method generate MonthlyList
 #' @aliases generate 
 #' @export
 
