@@ -12,7 +12,7 @@
 
 <meta name="author" content="Emanuele Cordano" />
 
-<meta name="date" content="2022-01-04" />
+<meta name="date" content="2022-01-13" />
 
 <title>Stochastic Generation of Daily Temperature Anomalies using RGENERATE and RMAWGEN</title>
 
@@ -141,7 +141,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <h1 class="title toc-ignore">Stochastic Generation of Daily Temperature Anomalies using RGENERATE and RMAWGEN</h1>
 <h4 class="author">Emanuele Cordano</h4>
-<h4 class="date">2022-01-04</h4>
+<h4 class="date">2022-01-13</h4>
 
 
 
@@ -11328,7 +11328,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  Two-sample Kolmogorov-Smirnov test
 ## 
 ## data:  param$data_original[, i] and gen1[, i]
-## D = 0.034291, p-value = 7.602e-06
+## D = 0.021971, p-value = 0.01191
 ## alternative hypothesis: two-sided</code></pre>
 <pre><code>## Warning in ks.test(param$data_original[, i], gen1[, i]): p-value will be
 ## approximate in the presence of ties</code></pre>
@@ -11336,7 +11336,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  Two-sample Kolmogorov-Smirnov test
 ## 
 ## data:  param$data_original[, i] and gen1[, i]
-## D = 0.037481, p-value = 6.695e-07
+## D = 0.02681, p-value = 0.0009725
 ## alternative hypothesis: two-sided</code></pre>
 <pre><code>## Warning in ks.test(param$data_original[, i], gen1[, i]): p-value will be
 ## approximate in the presence of ties</code></pre>
@@ -11344,7 +11344,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  Two-sample Kolmogorov-Smirnov test
 ## 
 ## data:  param$data_original[, i] and gen1[, i]
-## D = 0.019823, p-value = 0.03088
+## D = 0.022265, p-value = 0.01038
 ## alternative hypothesis: two-sided</code></pre>
 <pre><code>## Warning in ks.test(param$data_original[, i], gen1[, i]): p-value will be
 ## approximate in the presence of ties</code></pre>
@@ -11352,7 +11352,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  Two-sample Kolmogorov-Smirnov test
 ## 
 ## data:  param$data_original[, i] and gen1[, i]
-## D = 0.021372, p-value = 0.01569
+## D = 0.023538, p-value = 0.005587
 ## alternative hypothesis: two-sided</code></pre>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="do">##getVARmodel &lt;-</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="do">##  function (data,suffix=c(&quot;_Tx&quot;,&quot;_Tn&quot;),sep=&quot;&quot;,p=1,type=&quot;none&quot;,season=NULL,exogen=NULL,lag.max=NULL,ic=&quot;AIC&quot;,activateVARselect=FALSE,na.rm=TRUE,</span></span>

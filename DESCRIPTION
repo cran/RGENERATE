@@ -11,12 +11,12 @@ Description: A method 'generate()' is implemented in this package for the random
     environmental vector time series.
 Repository: CRAN
 URL: https://github.com/ecor/RGENERATE
-Date: 2022-01-04
-Version: 1.3.6
-Depends: R (>= 3.5.0), RMAWGEN, magrittr
+Date: 2022-01-13
+Version: 1.3.7
+Depends: R (>= 3.5.0),RMAWGEN,magrittr
 Suggests: knitr,rmarkdown,testthat
 RoxygenNote: 7.1.2
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-01-04 16:41:52 UTC; ecor
-Date/Publication: 2022-01-04 18:20:12 UTC
+Packaged: 2022-01-13 18:02:11 UTC; ecor
+Date/Publication: 2022-01-14 23:22:41 UTC

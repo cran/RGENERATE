@@ -1,4 +1,4 @@
-e44aa23342acf0975d5ba88da6c2d74d *DESCRIPTION
+7e7282add0665b08cf77c11fe8e9da09 *DESCRIPTION
 1d95fc4fe8c79d21faa237854f2cc554 *NAMESPACE
 43378fe69093362538be309d52120c5a *R/gapFilling.R
 c789baac9f119cf70743146a92c59b03 *R/generate.R
@@ -7,7 +7,7 @@ c789baac9f119cf70743146a92c59b03 *R/generate.R
 091e13549736a93963dd07b0cb4477df *inst/CITATION
 efcb0c3b4b05f5bcd69d64bee2a83793 *inst/doc/stochastic_generation.R
 635e1e1f4d7b3337e510d08b80d0df59 *inst/doc/stochastic_generation.Rmd
-406f84774aebc9cd5feac916219bdb8a *inst/doc/stochastic_generation.html
+8564eab27221df359ccc8763a99293e2 *inst/doc/stochastic_generation.html
 97a9e52083a6f4aa5159fa3fb4012858 *inst/outcomes/dffill.rds
 ce40857904ab88ccc9530015442f86ff *inst/outcomes/dffill2.rds
 bfa88d3574ae37fc0fbeed6457ac542e *inst/outcomes/gg.rds
@@ -25,7 +25,7 @@ e8c1458438ead3c34974bc0be3a03ed6 *inst/useful_files/LICENSE
 ff8ae34124208deff6e9e021241ae766 *inst/useful_files/roxygenize__.R
 71490cbfc8dfb4f98681095dcea968c9 *man/gapFilling.Rd
 dfb1551259581c4df8d00bb94a1db840 *man/generate.Rd
-bc85d4b677fb7ab27227910a7ad5ab21 *tests/Rplots.pdf
-c95fc427887a543c239bd6857d44dc67 *tests/test_generate.R
+3b4a87c106e0a2ce77d555421c41c56e *tests/Rplots.pdf
+950f1fd45bbf1d16fbc5206108a95357 *tests/test_generate.R
 74d150561df7d933028541d357dae9f1 *vignettes/bibliography.bib
 635e1e1f4d7b3337e510d08b80d0df59 *vignettes/stochastic_generation.Rmd
