@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/22910686.svg)](https://zenodo.org/badge/latestdoi/22910686)
+
 RGENERATE
 =========
 
@@ -10,3 +12,13 @@ To install the packege:
 >install_github("RGENERATE",username="ecor")
 
 
+
+# Documentation 
+
+See documentation and details on https://ecor.github.io/RGENERATE/ or https://CRAN.R-project.org/package=RGENERATE (CRAN Version)
+
+# Further Information 
+
+**RMAWGEN** package: https://ecor.github.io/RMAWGEN/
+
+**RGENERATEPREC** package: https://ecor.github.io/RGENERATEPREC/

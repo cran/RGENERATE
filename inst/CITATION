@@ -1,47 +1,42 @@
 citHeader("To cite RMAWGEN, RGENERATE and RGENERATEPREC in publications, please use the following article and the respective package reference:")
 
-citEntry(entry ="article",
-  title="Tools for stochastic weather series generation
-  in R environment",
-  author="Cordano E. and Eccel E.",
-  journal="Italian Journal of Agrometeorology",
-  volume="3",
-  doi="10.19199/2016.3.2038-5625.031",
-  url="http://agrometeorologia.it/documenti/Rivista2016_3/tools_for_stochastic_weather_series_generation_in_r_environment.pdf",
-  year="2016",
-  textVersion = "Cordano E. and Eccel E. (2016), Tools for stochastic weather series generation in R environment,  Italian Journal of Agrometeorology ,doi:10.19199/2016.3.2038-5625.031"
+bibentry(
+  bibtype = "Article",
+  title = "Tools for stochastic weather series generation in R environment",
+  author = "Emanuele Cordano and Emanuele Eccel",
+  journal = "Italian Journal of Agrometeorology",
+  year = "2016",
+  volume = "3",
+  doi = "10.19199/2016.3.2038-5625.031",
+  url = "https://www.patroneditore.com/articoli/7138/tools-for-stochastic-weather-series-generation-in-r-environment"
 )
 
-
- citEntry(entry ="manual",
-    title = "RGENERATE: Tools To Generate Vector Time Series",
-    author = "Emanuele Cordano",
-    year = "2022",
-    note = "R package",
-    url = "https://CRAN.R-project.org/package=RGENERATE",
-    textVersion="Emanuele Cordano (2022). RGENERATE: Tools To Generate Vector Time Series. R package, https://CRAN.R-project.org/package=RGENERATE"
-    
-  )
-
-  
- citEntry(entry ="manual",
-    title = "RGENERATEPREC: Tools to Generate Daily-Precipitation Time Series",
-    author = "Emanuele Cordano",
-    year = "2017",
-    note = "R package",
-    url = "https://CRAN.R-project.org/package=RGENERATEPREC",
-    textVersion="Emanuele Cordano (2017). RGENERATEPREC: Tools to Generate Daily-Precipitation Time Series. R package, https://CRAN.R-project.org/package=RGENERATEPREC"
-    
+bibentry(
+  bibtype = "Manual",
+  title = "RGENERATE: Tools To Generate Vector Time Series",
+  author = "Emanuele Cordano",
+  year = "2017",
+  note = "R package version",
+  url = "https://CRAN.R-project.org/package=RGENERATE",
+  doi = "10.5281/zenodo.6891938"
 )
-  
- citEntry(entry ="manual",
-    title = "RMAWGEN: Multi-Site Auto-Regressive Weather GENerator",
-    author = "Emanuele Cordano and Emanuele Eccel",
-    year = "2017",
-    note = "R package",
-    url="https://CRAN.R-project.org/package=RMAWGEN",
-    textVersion= "Emanuele Cordano and Emanuele Eccel (2017). RMAWGEN: Multi-Site Auto-Regressive Weather GENerator. R Package, https://CRAN.R-project.org/package=RMAWGEN"
-    
+
+bibentry(
+  bibtype = "Manual",
+  title = "RGENERATEPREC: Tools to Generate Daily-Precipitation Time Series",
+  author = "Emanuele Cordano",
+  year = "2017",
+  note = "R package version",
+  url = "https://CRAN.R-project.org/package=RGENERATEPREC",
+  doi = "10.5281/zenodo.6891940"
 )
-  
-  
+
+bibentry(
+  bibtype = "Manual",
+  title = "RMAWGEN: Multi-Site Auto-Regressive Weather GENerator",
+  author = "Emanuele Cordano and Emanuele Eccel",
+  year = "2017",
+  note = "R package version",
+  url = "https://CRAN.R-project.org/package=RMAWGEN",
+  doi = "10.5281/zenodo.6891949"
+)
